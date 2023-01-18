@@ -5,7 +5,8 @@ const mongoose=require("mongoose")
 
 app.use(express.json())
 
-mongoose.connect("mongodb+srv://Sakshi:monday123@cluster0.z5dpz2x.mongodb.net/group3Database",{useNewUrlParser:true})
+mongoose.connect("mongodb+srv://Sakshi:monday123@cluster0.z5dpz2x.mongodb.net/group3Database",
+{useNewUrlParser:true})
 .then(()=>{console.log("mongoDb is connected")})
 .catch((err)=>{console.log(err.message)})
 

@@ -1,11 +1,11 @@
-
-const urlController=require("../controller/urlController")
 const express = require('express');
 const router = express.Router();
+const urlController=require("../controller/urlController")
 
 
 
 router.post("/url/shorten",urlController.urlCreate);
+router.get("/url/:urlCode",urlController.getUrl);
 
 
 router.all("/*", (req, res) =>{
